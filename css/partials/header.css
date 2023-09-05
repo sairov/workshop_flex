@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar__logo {
@@ -65,3 +66,15 @@
   background-color: var(--primary-900);
 }
 
+@media (max-width: 802px) {
+  .navbar {
+    justify-content: center;
+    gap: var(--spacing-20);
+  }
+}
+
+@media (max-width: 478px) {
+  .navbar__menu {
+   display: none;
+  }
+}
